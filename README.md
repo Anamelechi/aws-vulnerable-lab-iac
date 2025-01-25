@@ -72,9 +72,9 @@ ansible-playbook -i inventory.ini private.yml
 #### **Visual Documentation**
 
 ## 📐 Architecture Diagram
-```markdown
+
 ![Network Architecture](images/architecture-diagram.png)
-```
+
 **Component Legend:**
 - Public Subnet: Juice Shop Docker Container
 - Private Subnet: Encrypted EBS Volume
