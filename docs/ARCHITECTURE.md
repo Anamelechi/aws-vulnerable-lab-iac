@@ -1,7 +1,7 @@
 # System Architecture Overview
 
 ## Infrastructure Design
-![Network Architecture Diagram](aws-vulnerable-lab-iac/images/architecture-diagram.png)
+![Network Architecture Diagram](../images/architecture-diagram.png)
 
 ### Core Components
 1. **Virtual Private Cloud (VPC)**
