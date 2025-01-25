@@ -70,8 +70,9 @@ ansible-playbook -i inventory.ini private.yml
 ---
 
 #### **Visual Documentation**
-```markdown
+
 ## 📐 Architecture Diagram
+```markdown
 ![Network Architecture](images/architecture-diagram.png)
 ```
 **Component Legend:**
