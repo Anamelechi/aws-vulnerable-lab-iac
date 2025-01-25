@@ -1,0 +1,26 @@
+- name: Configure Private Instance
+  hosts: private
+  become: yes
+  tasks:
+    - name: Install required packages
+      apt:
+        name: [xfsprogs, e2fsprogs]
+        state: present
+        update_cache: yes
+
+    - name: Format EBS volume
+      filesystem:
+        fstype: ext4
+        dev: /dev/sdh
+
+    - name: Create mount point
+      file:
+        path: /mnt/secret_notes
+        state: directory
+
+    - name: Mount EBS volume
+      mount:
+        path: /mnt/secret_notes
+        src: /dev/sdh
+        fstype: ext4
+        state: mounted
